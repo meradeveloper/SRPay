@@ -1,0 +1,124 @@
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.srpay.in.UI.Fragments.Home.HomeViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/Padding5"
+    android:id="@+id/LL"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ss.com.bannerslider.Slider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            n2:slider_animateIndicators="true"
+            n2:slider_indicatorSize="12.0dip"
+            n2:slider_interval="5000"
+            n2:slider_loopSlides="true"
+            n2:slider_selectedSlideIndicator="@drawable/selected_slide_indicator"
+            n2:slider_unselectedSlideIndicator="@drawable/unselected_slide_indicator"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" >
+        </ss.com.bannerslider.Slider>
+
+        // Quick Option
+
+        <android.support.v7.widget.CardView
+            android:id="@id/cv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_effective"
+                    android:padding="@dimen/margin10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Actions" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/recycler_view"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible"
+                    android:lineSpacingExtra="2dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        // Other Option
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cv2"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_effective"
+                    android:padding="@dimen/margin10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other Actions" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/other_recycle"
+                    android:lineSpacingExtra="2.0dip" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+</layout>

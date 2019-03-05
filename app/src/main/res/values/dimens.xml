@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_header_dimen">150dp</dimen>
+    <dimen name="image_header_top_margin">30dp</dimen>
+    <dimen name="login_layout_padding">12dp</dimen>
+    <dimen name="login_layout_padding_top">50dp</dimen>
+    <dimen name="login_button_margin">16dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="Padding5">5dp</dimen>
+    <dimen name="size60">60dp</dimen>
+    <dimen name="Basic_Text_Size">15sp</dimen>
+    <dimen name="Large_Text_Size">18sp</dimen>
+    <dimen name="Small_Text_Size">12sp</dimen>
+    <dimen name="default_spacing_verysmall">1dp</dimen>
+    <dimen name="default_spacing_small">4dp</dimen>
+    <dimen name="default_spacing_medium">8dp</dimen>
+    <dimen name="default_spacing_huge">128dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>
